@@ -45,7 +45,7 @@ public class User implements Cloneable {
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    protected Object clone() {
         User user = new User();
         user.setName(name);
         user.setAge(age);
