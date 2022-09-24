@@ -8,6 +8,9 @@ package com.design.mode.creation.singleton.enumSingleton;
  *  * 利用类加载机制保证线程安全.
  **/
 public enum EnumSingleton {
+    /*
+    * 反射实例化
+     */
     INSTANCE;
     private Object data;
 

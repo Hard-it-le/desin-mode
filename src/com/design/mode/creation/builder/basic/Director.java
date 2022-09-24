@@ -3,7 +3,7 @@ package com.design.mode.creation.builder.basic;
 /**
  */
 public class Director {
-    private final Builder builder = new ConcreteBuilder();
+    private final AbstractBuilder builder = new ConcreteBuilder();
 
     public Product getAProduct() {
         builder.setPart("宝马汽车", "X7");

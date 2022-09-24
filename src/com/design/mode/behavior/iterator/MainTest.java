@@ -10,7 +10,7 @@ public class MainTest {
         test01Man.likeYou("李四");
         test01Man.likeYou("王五");
 
-        BeautifulMan.Itr iterator = test01Man.getIterator();
+        AbstractBeautifulMan.Itr iterator = test01Man.getIterator();
         String s = iterator.firstLove();
         System.out.println(s);
         String s1 = iterator.currentLove();

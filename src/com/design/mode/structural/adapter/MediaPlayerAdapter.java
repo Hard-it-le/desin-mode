@@ -10,18 +10,18 @@ public class MediaPlayerAdapter implements MediaPlayer {
     AdvancedMediaPlayer advancedMediaPlayer;
 
     public MediaPlayerAdapter(String audioType) {
-        if (audioType.equalsIgnoreCase("vlc")) {
+        if ("vlc".equalsIgnoreCase(audioType)) {
             advancedMediaPlayer = new VicMediaPlayer();
-        } else if (audioType.equalsIgnoreCase("mp4")) {
+        } else if ("mp4".equalsIgnoreCase(audioType)) {
             advancedMediaPlayer = new Mp4MediaPlayer();
         }
     }
 
     @Override
     public void play(String audioType, String fileName) {
-        if (audioType.equalsIgnoreCase("vlc")) {
+        if ("vlc".equalsIgnoreCase(audioType)) {
             advancedMediaPlayer.playVic(fileName);
-        } else if (audioType.equalsIgnoreCase("mp4")) {
+        } else if ("mp4".equalsIgnoreCase(audioType)) {
             advancedMediaPlayer.playMp4(fileName);
         }
     }

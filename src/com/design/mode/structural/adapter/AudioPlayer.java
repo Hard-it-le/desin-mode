@@ -10,9 +10,9 @@ public class AudioPlayer implements MediaPlayer {
 
     @Override
     public void play(String audioType, String fileName) {
-        if (audioType.equalsIgnoreCase("mp3")) {
+        if ("mp3".equalsIgnoreCase(audioType)) {
             System.out.println("mp3 file : " + fileName);
-        } else if ((audioType.equalsIgnoreCase("vlc")) || (audioType.equalsIgnoreCase("mp4"))) {
+        } else if (("vlc".equalsIgnoreCase(audioType)) || ("mp4".equalsIgnoreCase(audioType))) {
             mediaPlayerAdapter = new MediaPlayerAdapter(audioType);
             mediaPlayerAdapter.play(audioType, fileName);
         } else {

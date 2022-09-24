@@ -23,5 +23,5 @@ public abstract class Leader {
      * 处理请求的方法
      * @param LeaveDays
      */
-    public abstract void handleRequest(int LeaveDays);
+    public abstract void handleRequest(int leaveDays);
 }

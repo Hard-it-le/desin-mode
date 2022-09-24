@@ -6,7 +6,7 @@ import java.util.List;
 /**
 
  */
-public abstract class BeautifulMan {
+public abstract class AbstractBeautifulMan {
 
     private List<String> girlFriends = new ArrayList<>();
 
